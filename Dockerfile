@@ -18,7 +18,7 @@ RUN addgroup ${USERNAME} docker
 RUN addgroup ${USERNAME} wheel
 RUN addgroup ${USERNAME} ${USERNAME}
 
-USER ${USERNAME}
+USER 10001
 EXPOSE 1234
 WORKDIR /app
 COPY gows /app/
