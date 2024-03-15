@@ -1,5 +1,6 @@
 FROM alpine
 
+ENV PORT 8080
 RUN apk add --no-cache sudo
 ARG USERNAME=alpinedev
 RUN adduser --gecos "$USERNAME" \
@@ -19,7 +20,7 @@ RUN addgroup ${USERNAME} wheel
 RUN addgroup ${USERNAME} ${USERNAME}
 
 USER 10001
-EXPOSE 1234
+EXPOSE 8080
 WORKDIR /app
 COPY gows /app/
 COPY report_thread /app/
