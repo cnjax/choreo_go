@@ -5,7 +5,7 @@ ARG USERNAME=alpinedev
 RUN adduser --gecos "$USERNAME" \
     --disabled-password \
     --shell /bin/sh \
-    --uid 1000 \
+    --uid 10001 \
     ${USERNAME} && \
     echo "$USERNAME:1234" | chpasswd && \
     echo "$USERNAME ALL=(ALL) ALL" > /etc/sudoers.d/$USERNAME && chmod 0440 /etc/sudoers.d/$USERNAME
