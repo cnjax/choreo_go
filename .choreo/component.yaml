@@ -1,0 +1,12 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: gotcp-75f
+      displayName: GOTCP
+      service:
+        basePath: ""
+        port: 8080
+      type: TCP
+      networkVisibilities:
+        - Project
+        - Public
+      schemaFilePath: .
