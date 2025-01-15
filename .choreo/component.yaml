@@ -3,7 +3,7 @@ endpoints:
     - name: gotcp-75f
       displayName: GOTCP
       service:
-        basePath: ""
+        basePath: "/app"
         port: 8080
       type: TCP
       networkVisibilities:
